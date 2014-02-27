@@ -27,6 +27,15 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+gem 'compass'
+gem 'foundation-rails'
+
+gem 'simple_form'
+
+gem 'google_drive'
+
+gem 'activerecord-tableless'
+
 group :test, :development do
   gem 'dotenv-rails'
   gem 'pry-rails'
