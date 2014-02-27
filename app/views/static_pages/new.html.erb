@@ -1,0 +1,78 @@
+<div class='row'>
+<%= content_for :header do %>
+  <div class='wrapper'>
+  <div id='headerwrap'>
+    <div class='push'></div>
+    <div class='footer'>
+      <div class="panel large-12 columns">
+        <div class="small-12 medium-9 columns">
+          <h2>Preview our <a href =
+"https://docs.google.com/document/d/1Km1zIrE5aLECeUefmC4LyVKwyDWQVOU-9ZrBMQEZ1Iw/edit?usp=sharing"
+target="_blank">curriculum</a> for Mar 1</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+<% end %>
+</div>
+
+<div class='row'>
+  <div class='text-center'>
+    <div class="medium-3 columns service">
+      <a href="#">
+        <i class="fa fa-users"></i>
+        <h3>Mentor</h3>
+          <p>Mentorship from experienced programmers who love what they
+do. Learn best coding practices, techniques, and resources.
+Get your code reviewed</p>
+      </a>
+    </div>
+  </div>
+
+  <div class='text-center'>
+    <div class="medium-3 columns service">
+      <a href="#">
+        <i class="fa fa-smile-o"></i>
+        <h3>100% Satisfaction guarantee</h3>
+        <p>If you’re not happy with the course, just let us know and we’ll refund your money. It’s as simple as that.</p>
+      </a>
+    </div>
+  </div>
+
+  <div class='text-center'>
+    <div class="medium-3 columns service">
+      <a href="#">
+        <i class="fa fa-bug"></i>
+        <h3>Get unstuck faster</h3>
+          <p>No more pulling your hair when code breaks. Collaborate
+with other students and share knowledge on our platform. 1 on 1 sessions with your mentor</p>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class='row'>
+  <div class='text-center'>
+    <div id='content3'>
+      <h2>
+        <%= link_to 'Start Learning Ruby Today', "#", 'data-reveal-id' =>
+'emailRegister', class:"large alert radius round button" %>
+
+        <div id="emailRegister" class="reveal-modal" data-reveal>
+          <h3>Awesome. Email me the next steps!</h3>
+            <div class="row">
+              <div class="small-12 large-6 columns">
+                <%= simple_form_for @contact do |f| %>
+                  <%= f.input :email, placeholder: "user@domain.com" %>
+                  <%= f.button :submit, 'Submit'  %>
+                <% end %>
+              </div>
+            </div>
+          </form>
+        </div>
+      </h2>
+      <p>Moon Brothers LLC</p>
+    </div>
+  </div>
+</div>
