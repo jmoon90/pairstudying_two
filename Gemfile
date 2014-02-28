@@ -38,6 +38,8 @@ gem 'activerecord-tableless'
 
 gem 'rails_12factor', group: :production
 
+gem 'devise'
+
 group :test, :development do
   gem 'dotenv-rails'
   gem 'pry-rails'
