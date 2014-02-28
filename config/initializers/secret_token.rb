@@ -23,5 +23,5 @@ def secure_token
     token
   end
 end
-PairStudying::Application.config.secret_key_base = secret_token
+PairStudying::Application.config.secret_key_base = secure_token
 
