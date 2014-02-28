@@ -8,17 +8,13 @@
   <section class="top-bar-section">
     <!-- Right Nav Section -->
     <ul class="right">
-      <li ><%= link_to "Pricing" %></li>
-      <li class="active"><%= link_to "FAQ" %></li>
+      <li ><%= link_to "Pricing", orders_path %></li>
+
+      <li class="active"><%= link_to "FAQ", faq_static_pages_path %></li>
       <li class="has-dropdown">
-        <ul class="dropdown">
-          <li><%= link_to 'Profile' %></li>
-          <li><%= link_to 'Sign out' %>
-        </ul>
-        <%= link_to "New User" %>
+        <%= link_to "Current Student" %>
         <ul class="dropdown">
           <li><%= link_to 'Sign In' %></li>
-          <li><%= link_to 'Sign Up' %></li>
         </ul>
       </li>
     </ul>
