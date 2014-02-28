@@ -36,6 +36,8 @@ gem 'google_drive'
 
 gem 'activerecord-tableless'
 
+gem 'rails_12factor', group: :production
+
 group :test, :development do
   gem 'dotenv-rails'
   gem 'pry-rails'
