@@ -1,4 +1,6 @@
 class StaticPagesController < ApplicationController
+  skip_before_filter :verify_authenticity_token
+
   def new
     @contact = StaticPage.new
   end
