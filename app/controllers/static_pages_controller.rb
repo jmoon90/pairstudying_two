@@ -6,7 +6,7 @@ class StaticPagesController < ApplicationController
   def create
     @contact = StaticPage.new(static_page_params)
     if @contact.valid?
-      @contact.update_spreadsheet
+      StaticPage.update_spreadsheet(@contact)
       redirect_to root_path
     else
       render :new
