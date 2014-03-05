@@ -61,6 +61,23 @@ Curriculum Overview</a></li>
  the United States military in the past, please <a
 href="mailto:johnmoonyy@gmail.com?subject=Free - 3 Week Ruby for
  military personnel">email me</a> for a free course. And thank you for your service.</b>
+    <h2>
+      <%= link_to 'Try 1 week for free', "#", 'data-reveal-id' =>
+'emailRegister', class:"medium radius button" %>
+
+      <div id="emailRegister" class="reveal-modal" data-reveal>
+        <h3>Awesome. Email me the next steps!</h3>
+          <div class="row">
+            <div class="small-12 large-6 columns">
+              <%= simple_form_for @contact do |f| %>
+                <%= f.input :email, placeholder: "user@domain.com" %>
+                <%= f.button :submit, 'Submit'  %>
+              <% end %>
+            </div>
+          </div>
+        </form>
+      </div>
+    </h2>
   </div>
 </div>
 
