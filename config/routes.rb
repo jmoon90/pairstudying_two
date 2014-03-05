@@ -4,6 +4,7 @@ PairStudying::Application.routes.draw do
   resources :static_pages, only: [:new, :create] do
     collection do
       get 'faq'
+      get 'about'
     end
   end
   resources :orders, only: [:index]
