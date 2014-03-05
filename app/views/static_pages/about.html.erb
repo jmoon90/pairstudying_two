@@ -32,6 +32,29 @@ through a programming bootcamp it gave me a huge acceleration in
 learning. It also gave me many insight to how students learn, and where
 I built out <a href='http://pairstudying-old.herokuapp.com/'>pair
 programming v1</a>.
+    <h2>
+      <%= link_to 'Start Learning Ruby Today', "#", 'data-reveal-id' =>
+'emailRegister', class:"large radius round button" %>
+
+      <div id="emailRegister" class="reveal-modal" data-reveal>
+        <h3>Awesome. Email me the next steps!</h3>
+          <div class="row">
+            <div class="small-12 large-6 columns">
+              <%= simple_form_for @contact do |f| %>
+                <%= f.input :email, placeholder: "user@domain.com" %>
+                <%= f.button :submit, 'Submit'  %>
+              <% end %>
+            </div>
+          </div>
+        </form>
+      </div>
+    </h2>
   </div>
-  <a href="">
+  <div class='small-12 large-8 large-centered columns'>
+    <a href='https://twitter.com/johnmoon6'<i class="fa
+fa-twitter"></i><a/>
+    <a href='www.linkedin.com/in/jmoon90/'<i class="fa
+fa-linkedin"></i></a>
+    <a href='https://plus.google.com/u/0/107526635862468279667/about'<i class="fa fa-google-plus"></i>
+  </div>
 </div>

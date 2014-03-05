@@ -5,6 +5,10 @@ class StaticPagesController < ApplicationController
     @contact = StaticPage.new
   end
 
+  def about
+    @contact = StaticPage.new
+  end
+
   def create
     @contact = StaticPage.new(static_page_params)
     if @contact.valid?
