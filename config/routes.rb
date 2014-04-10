@@ -5,6 +5,7 @@ PairStudying::Application.routes.draw do
     collection do
       get 'faq'
       get 'about'
+      get 'students'
     end
   end
   resources :orders, only: [:index]
